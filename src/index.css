@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .layout {
+    @apply ml-auto mr-auto w-[95%] max-w-7xl;
+  }
+}
