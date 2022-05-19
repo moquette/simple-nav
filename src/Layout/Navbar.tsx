@@ -5,6 +5,7 @@ import {
   RiBarChartLine,
   RiBubbleChartLine,
   RiMenuFill,
+  RiCloseLine,
 } from 'react-icons/ri'
 
 export interface IAppProps {
@@ -53,10 +54,13 @@ const NavigationBar = ({ className }: IAppProps) => {
                 <>
                   <Popover.Button
                     className={`
-                  ${!open && ''}
-                  group mr-2 inline-flex items-center rounded bg-white p-2 text-base font-medium transition duration-150 ease-in-out hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden`}
+                  group mr-2 inline-flex items-center rounded bg-white p-2 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden`}
                   >
-                    <RiMenuFill className="text-2xl" />
+                    {open ? (
+                      <RiCloseLine className="text-2xl" />
+                    ) : (
+                      <RiMenuFill className="text-2xl" />
+                    )}
                   </Popover.Button>
                   <Transition
                     as={Fragment}
