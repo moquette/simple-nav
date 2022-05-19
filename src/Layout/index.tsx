@@ -3,13 +3,17 @@ import Navbar from './Navbar'
 
 export interface IAppProps {
   className?: string
+  noNavbar?: boolean
   children?: React.ReactNode
 }
 
-const Layout = ({ className, children }: IAppProps) =>
+const Layout = ({ className, noNavbar, children }: IAppProps) =>
   children ? (
     <>
-      <Navbar />
+      {/*****************************
+        Hide nav if not needed
+      ******************************/}
+      {noNavbar ? null : <Navbar />}
       <div className={`layout ${className}`}>
         <div>{children}</div>
       </div>

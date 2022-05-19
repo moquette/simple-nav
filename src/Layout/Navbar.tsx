@@ -4,7 +4,7 @@ import {
   RiAtLine,
   RiBarChartLine,
   RiBubbleChartLine,
-  RiMenuFill,
+  RiMore2Fill,
   RiCloseLine,
 } from 'react-icons/ri'
 
@@ -59,7 +59,7 @@ const NavigationBar = ({ className }: IAppProps) => {
                     {open ? (
                       <RiCloseLine className="text-2xl" />
                     ) : (
-                      <RiMenuFill className="text-2xl" />
+                      <RiMore2Fill className="text-2xl" />
                     )}
                   </Popover.Button>
                   <Transition
