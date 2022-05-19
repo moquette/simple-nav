@@ -1,6 +1,11 @@
 import React, { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import { RiAtLine, RiBarChartLine, RiBubbleChartLine } from 'react-icons/ri'
+import {
+  RiAtLine,
+  RiBarChartLine,
+  RiBubbleChartLine,
+  RiMenuFill,
+} from 'react-icons/ri'
 
 export interface IAppProps {
   className?: string
@@ -29,7 +34,7 @@ const NavigationBar = ({ className }: IAppProps) => {
   ]
 
   return (
-    <nav className={`${className}`}>
+    <nav className={` ${className}`}>
       <div className="layout sticky top-0 z-10">
         <div className="mx-auto">
           <div className="flex h-16 items-center justify-between">
@@ -48,28 +53,19 @@ const NavigationBar = ({ className }: IAppProps) => {
                 <>
                   <Popover.Button
                     className={`
-                  ${open ? '' : 'rotate-90'}
+                  ${!open && ''}
                   group mr-2 inline-flex items-center rounded bg-white p-2 text-base font-medium transition duration-150 ease-in-out hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden`}
                   >
-                    <svg width="24" height="24" fill="none" aria-hidden="true">
-                      <path
-                        d="M12 
-                      6v.01M12 12v.01M12 18v.01M12 
-                      7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 
-                      6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 
-                      6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
-                        stroke="currentColor"
-                      />
-                    </svg>
+                    <RiMenuFill className="text-2xl" />
                   </Popover.Button>
                   <Transition
                     as={Fragment}
-                    enter="transition ease-out duration-250"
-                    enterFrom="opacity-0 translate-y-3"
+                    enter="transition ease-out duration-150"
+                    enterFrom="opacity-0 translate-y-2"
                     enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-125"
+                    leave="transition ease-in duration-150"
                     leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-3"
+                    leaveTo="opacity-0 translate-y-2"
                   >
                     <Popover.Panel className="absolute right-0 z-10 max-w-xs pt-2">
                       <div className="overflow-hidden rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
