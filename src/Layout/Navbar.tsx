@@ -54,7 +54,7 @@ const NavigationBar = ({ className }: IAppProps) => {
                 <>
                   <Popover.Button
                     className={`
-                  group mr-2 inline-flex items-center rounded bg-white p-2 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden`}
+                  group inline-flex items-center rounded bg-white p-2 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden`}
                   >
                     {open ? (
                       <RiCloseLine className="text-2xl" />
