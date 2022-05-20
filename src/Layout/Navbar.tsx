@@ -4,7 +4,7 @@ import {
   RiAtLine,
   RiBarChartLine,
   RiBubbleChartLine,
-  RiMore2Fill,
+  RiMoreFill,
   RiCloseLine,
 } from 'react-icons/ri'
 
@@ -16,19 +16,19 @@ const NavigationBar = ({ className }: IAppProps) => {
   const Links = [
     {
       title: 'Link 1',
-      path: '##',
+      path: '/',
       icon: RiAtLine,
       description: 'Lorem ipsum dolor sit',
     },
     {
       title: 'Link 2',
-      path: '##',
+      path: '/',
       icon: RiBarChartLine,
       description: 'Nullam consectetur risus vel',
     },
     {
       title: 'Link 3',
-      path: '##',
+      path: '/',
       icon: RiBubbleChartLine,
       description: 'Nunc tellus neque mattis',
     },
@@ -39,7 +39,7 @@ const NavigationBar = ({ className }: IAppProps) => {
       <div className="layout sticky top-0 z-10">
         <div className="mx-auto">
           <div className="flex h-16 items-center justify-between">
-            <a href="##" className="text-2xl font-black">
+            <a href="/" className="text-2xl font-black">
               Simple Nav
             </a>
             <ul className="hidden space-x-4 md:flex">
@@ -54,12 +54,12 @@ const NavigationBar = ({ className }: IAppProps) => {
                 <>
                   <Popover.Button
                     className={`
-                  group inline-flex items-center rounded bg-white p-2 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden`}
+                  group inline-flex items-center rounded bg-white p-2 hover:text-opacity-100 focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden`}
                   >
                     {open ? (
-                      <RiCloseLine className="text-2xl" />
+                      <RiCloseLine className="animate-fade-in text-2xl" />
                     ) : (
-                      <RiMore2Fill className="text-2xl" />
+                      <RiMoreFill className="animate-fade-in text-2xl" />
                     )}
                   </Popover.Button>
                   <Transition

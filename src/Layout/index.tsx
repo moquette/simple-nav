@@ -9,7 +9,7 @@ export interface IAppProps {
 
 const Layout = ({ className, noNavbar, children }: IAppProps) =>
   children ? (
-    <>
+    <div className="animate-fade-in">
       {/*****************************
         Hide nav if not needed
       ******************************/}
@@ -17,7 +17,7 @@ const Layout = ({ className, noNavbar, children }: IAppProps) =>
       <div className={`layout ${className}`}>
         <div>{children}</div>
       </div>
-    </>
+    </div>
   ) : null
 
 export default Layout
