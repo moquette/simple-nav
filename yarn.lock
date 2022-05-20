@@ -1640,13 +1640,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@headlessui/react@npm:^1.6.1":
-  version: 1.6.1
-  resolution: "@headlessui/react@npm:1.6.1"
+"@headlessui/react@npm:^1.6.2":
+  version: 1.6.2
+  resolution: "@headlessui/react@npm:1.6.2"
   peerDependencies:
     react: ^16 || ^17 || ^18
     react-dom: ^16 || ^17 || ^18
-  checksum: e69ac75b71dae4960790ca985a4b1eff4ba0e4a7c9b9d31791a0a0ae618dc125b7decd8801d530b017de02b90150884eb17c1c3dedcf42afc2b42f137e17c870
+  checksum: 2d2437488d93d7ba77e43eb1041680fe377298b8c0ba1c749a12d8aea3edb4e04ab5782c8ce738f3e3b5b12cdac5543b5aacb203e33dbd708d280ded7311e92f
   languageName: node
   linkType: hard
 
@@ -2623,10 +2623,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^17.0.33":
-  version: 17.0.33
-  resolution: "@types/node@npm:17.0.33"
-  checksum: 6620652cc89ce125e1162e060ec4608c25b3635185e3e5dcaae4ed09e4770dc8bf168ba48bcd7059a1a56087a05000d7ed562e81aea7b6a512e2b13d4409c6b6
+"@types/node@npm:^17.0.35":
+  version: 17.0.35
+  resolution: "@types/node@npm:17.0.35"
+  checksum: 7a24946ae7fd20267ed92466384f594e448bfb151081158d565cc635d406ecb29ea8fb85fcd2a1f71efccf26fb5bd3c6f509bde56077eb8b832b847a6664bc62
   languageName: node
   linkType: hard
 
@@ -8460,7 +8460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.3":
+"nanoid@npm:^3.3.3, nanoid@npm:^3.3.4":
   version: 3.3.4
   resolution: "nanoid@npm:3.3.4"
   bin:
@@ -9843,7 +9843,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.3.5, postcss@npm:^8.4.12, postcss@npm:^8.4.13, postcss@npm:^8.4.4, postcss@npm:^8.4.7":
+"postcss@npm:^8.3.5, postcss@npm:^8.4.12, postcss@npm:^8.4.4, postcss@npm:^8.4.7":
   version: 8.4.13
   resolution: "postcss@npm:8.4.13"
   dependencies:
@@ -9851,6 +9851,17 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 514fb3552805a5d039a2d6b4df3e73f657001716ca93c0d57e6067b0473abdea70276d80afc96005c9aaff82ed5d98062bd97724d3f47ca400fba0b5e9e436ed
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.14":
+  version: 8.4.14
+  resolution: "postcss@npm:8.4.14"
+  dependencies:
+    nanoid: ^3.3.4
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: fe58766ff32e4becf65a7d57678995cfd239df6deed2fe0557f038b47c94e4132e7e5f68b5aa820c13adfec32e523b693efaeb65798efb995ce49ccd83953816
   languageName: node
   linkType: hard
 
@@ -9877,12 +9888,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:^0.1.10":
-  version: 0.1.10
-  resolution: "prettier-plugin-tailwindcss@npm:0.1.10"
+"prettier-plugin-tailwindcss@npm:^0.1.11":
+  version: 0.1.11
+  resolution: "prettier-plugin-tailwindcss@npm:0.1.11"
   peerDependencies:
     prettier: ">=2.2.0"
-  checksum: 465a7e02bd2224f9773f35190b6b4d19f281848d0492d4d43eabf403b33117303222faf775d8d569d0ce8bbb75336aa4db005db1935bb78c551ff711a8f89537
+  checksum: b06a81a22242407676de7b69342c1d69078e731e6363c7abd5877b044f2ddd83eba7281b085ea77754a49de88dcde164f394c31ae724a99fd46c0f9a4d4547a0
   languageName: node
   linkType: hard
 
@@ -10661,16 +10672,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.51.0":
-  version: 1.51.0
-  resolution: "sass@npm:1.51.0"
+"sass@npm:^1.52.0":
+  version: 1.52.0
+  resolution: "sass@npm:1.52.0"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: d674fd87be863961d5e5233a148e381a72b06ca1749ffd95a08be2c3f4aa8fc77e3e21840347a84d7d4542cbf97cd6f9bfae19ecb1f5eefa6c207a3d8f923dbc
+  checksum: 7405b6de76d6df3ebea06a3af30e3a0690738e4bf72f519ec07a7bd700f1a2bb7324f0d60c070fdc6b6c58eff869da0a3de02f3fcd4a6387c1319b2d8162d08a
   languageName: node
   linkType: hard
 
@@ -10921,13 +10932,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "simple-nav@workspace:."
   dependencies:
-    "@headlessui/react": ^1.6.1
+    "@headlessui/react": ^1.6.2
     "@testing-library/dom": ^8.13.0
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^13.2.0
     "@testing-library/user-event": ^14.2.0
     "@types/jest": ^27.5.1
-    "@types/node": ^17.0.33
+    "@types/node": ^17.0.35
     "@types/react": ^18.0.9
     "@types/react-dom": ^18.0.4
     autoprefixer: ^10.4.7
@@ -10935,14 +10946,14 @@ __metadata:
     eslint-config-prettier: ^8.5.0
     eslint-plugin-prettier: ^4.0.0
     husky: ^8.0.1
-    postcss: ^8.4.13
+    postcss: ^8.4.14
     prettier: ^2.6.2
-    prettier-plugin-tailwindcss: ^0.1.10
+    prettier-plugin-tailwindcss: ^0.1.11
     react: ^18.1.0
     react-dom: ^18.1.0
     react-icons: ^4.3.1
     react-scripts: 5.0.1
-    sass: ^1.51.0
+    sass: ^1.52.0
     tailwindcss: ^3.0.24
     typescript: ^4.6.4
     web-vitals: ^2.1.4
