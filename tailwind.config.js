@@ -17,30 +17,16 @@ module.exports = {
           },
         },
       },
-      width: {
-        95: '95%',
-      },
     },
   },
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities, theme }) {
       addComponents({
-        '.card': {
-          backgroundColor: theme('colors.white'),
-          borderRadius: theme('borderRadius.lg'),
-          padding: theme('spacing.6'),
-          boxShadow: theme('boxShadow.xl'),
-        },
         '.layout': {
           marginLeft: theme('margin.auto'),
           marginRight: theme('margin.auto'),
           width: theme('width.11/12'),
           maxWidth: theme('width.11/12'),
-        },
-      })
-      addUtilities({
-        '.content-auto': {
-          contentVisibility: 'auto',
         },
       })
     }),
