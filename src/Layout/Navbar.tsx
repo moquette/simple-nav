@@ -35,7 +35,7 @@ const NavigationBar = ({ className }: IAppProps) => {
   ]
 
   return (
-    <nav className={` ${className}`}>
+    <nav className={`border-b border-gray-200 ${className}`}>
       <div className="layout sticky top-0 z-10">
         <div className="mx-auto">
           <div className="flex h-16 items-center justify-between">
@@ -54,7 +54,7 @@ const NavigationBar = ({ className }: IAppProps) => {
                 <>
                   <Popover.Button
                     className={`
-                  group inline-flex items-center rounded-full bg-white p-2 hover:text-opacity-100 focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden`}
+                  group inline-flex items-center rounded-full p-2 hover:bg-gray-100 hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden`}
                   >
                     {open ? (
                       <RiCloseLine className="animate-fade-in text-2xl" />

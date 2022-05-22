@@ -7,17 +7,16 @@ export interface IAppProps {
   children?: React.ReactNode
 }
 
-const Layout = ({ className, noNavbar, children }: IAppProps) =>
-  children ? (
-    <div className="animate-fade-in">
-      {/*****************************
+const Layout = ({ className, noNavbar, children }: IAppProps) => (
+  <div className="animate-fade-in">
+    {/*****************************
         Hide nav if not needed
       ******************************/}
-      {noNavbar ? null : <Navbar />}
-      <div className={`layout ${className}`}>
-        <div>{children}</div>
-      </div>
+    {noNavbar ? null : <Navbar />}
+    <div className={`layout ${className}`}>
+      <div>{children}</div>
     </div>
-  ) : null
+  </div>
+)
 
 export default Layout
