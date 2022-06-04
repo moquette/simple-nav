@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import Navbar from '../components/navbar'
+import Navbar from './navbar'
 
 export interface LayoutProps {
   className?: string

@@ -1,4 +1,4 @@
-import Layout from './layout'
+import Layout from 'components/layout'
 
 const App = () => (
   <Layout>
