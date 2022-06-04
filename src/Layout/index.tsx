@@ -1,20 +1,21 @@
 import * as React from 'react'
-import Navbar from './Navbar'
 
-export interface IAppProps {
+import Navbar from '../components/navbar'
+
+export interface LayoutProps {
   className?: string
   noNavbar?: boolean
   children?: React.ReactNode
 }
 
-const Layout = ({ className, noNavbar, children }: IAppProps) => (
+const Layout = ({ className, noNavbar, children }: LayoutProps) => (
   <div className="animate-fade-in">
     {/*****************************
         Hide nav if not needed
       ******************************/}
-    {noNavbar ? null : <Navbar />}
+    <Navbar />
     <div className={`layout ${className}`}>
-      <div>{children}</div>
+      <div className="pt-5">{children}</div>
     </div>
   </div>
 )

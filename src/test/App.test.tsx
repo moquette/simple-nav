@@ -1,9 +1,10 @@
-import React from 'react'
 import { render, screen } from '@testing-library/react'
-import App from '../App'
 
-test('renders learn react link', () => {
+import App from '../App'
+import React from 'react'
+
+test('renders Simple Nav component', () => {
   render(<App />)
-  const linkElement = screen.getByText(/Simple Nav/i)
-  expect(linkElement).toBeInTheDocument()
+  const NavTitleElement = screen.getByText(/Simple Nav/i)
+  expect(NavTitleElement).toBeInTheDocument()
 })
