@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Simple Nav
 
-Minimalistic React app for TypeScript projects. Bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and the following extras:
+Simple React /Tailwind CSS navigation component using HeadlessUI.
+
+<a href="https://simple-nav.moquette.us/" rel="Lint to demo"><img src="./docs/cover.png" alt="Link to demo" /></a>
 
 - [TailwindCSS](https://tailwindcss.com/) with [Auto Sorting](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
 - [React Absolute Imports](https://create-react-app.dev/docs/importing-a-component/#absolute-imports)
