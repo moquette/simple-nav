@@ -1,6 +1,6 @@
 {
   "name": "simple-nav",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple React /Tailwind CSS navigation component using HeadlessUI.",
   "private": true,
   "scripts": {
