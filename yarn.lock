@@ -4296,6 +4296,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commander@npm:^6.0.0":
+  version: 6.2.1
+  resolution: "commander@npm:6.2.1"
+  checksum: d7090410c0de6bc5c67d3ca41c41760d6d268f3c799e530aafb73b7437d1826bbf0d2a3edac33f8b57cc9887b4a986dce307fa5557e109be40eadb7c43b21742
+  languageName: node
+  linkType: hard
+
 "commander@npm:^7.2.0":
   version: 7.2.0
   resolution: "commander@npm:7.2.0"
@@ -6300,6 +6307,17 @@ __metadata:
     call-bind: ^1.0.2
     get-intrinsic: ^1.1.1
   checksum: 9ceff8fe968f9270a37a1f73bf3f1f7bda69ca80f4f80850670e0e7b9444ff99323f7ac52f96567f8b5f5fbe7ac717a0d81d3407c7313e82810c6199446a5247
+  languageName: node
+  linkType: hard
+
+"git-branch-is@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "git-branch-is@npm:4.0.0"
+  dependencies:
+    commander: ^6.0.0
+  bin:
+    git-branch-is: bin/git-branch-is.js
+  checksum: a062e54c2a7041eebc4841e54af49157986b4280d08474da4e3a4392235ea9312e4142e0c071701b2fc644d507dca30e14aa6d41cc7ee8bcbba5acdf5acd1803
   languageName: node
   linkType: hard
 
@@ -11009,6 +11027,7 @@ __metadata:
     eslint-config-prettier: ^8.5.0
     eslint-config-react-app: ^7.0.1
     eslint-plugin-prettier: ^4.0.0
+    git-branch-is: ^4.0.0
     husky: ^8.0.1
     postcss: ^8.4.14
     prettier: ^2.6.2

@@ -1,8 +1,12 @@
 # Simple Nav
 
+<a href="https://simple-nav.moquette.us/" rel="Lint to demo"><img src="./docs/cover.png" alt="Link to demo" /></a>
+
 Simple React /Tailwind CSS navigation component using HeadlessUI.
 
-<a href="https://simple-nav.moquette.us/" rel="Lint to demo"><img src="./docs/cover.png" alt="Link to demo" /></a>
+<a href="https://simple-nav.moquette.us" alt="Demo Page">![](https://img.shields.io/static/v1?label=Demo&message=https://simple-nav.moquette.us&style=flat-square&color=blue)</a>
+![Version](https://img.shields.io/github/package-json/v/moquette/simple-nav?style=flat-square&color=blue) ![Commit](https://img.shields.io/github/last-commit/moquette/simple-nav?style=flat-square&color=blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
 - [TailwindCSS](https://tailwindcss.com/) with [Auto Sorting](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
 - [React Absolute Imports](https://create-react-app.dev/docs/importing-a-component/#absolute-imports)

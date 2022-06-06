@@ -3,3 +3,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npx lint-staged
+yarn git-branch-is main && yarn version patch && git add package.json
